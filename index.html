@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>AI Recipe Generator</title>
   </head>
   <body>
@@ -20,16 +21,11 @@
             autofocus
             required
             class="instructions"
+            id="user-instructions"
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="recipe" id="recipe">
-          Ingredients yields 8 servings <br />
-          1 ½ cups all-purpose flour 3 ½ teaspoons baking powder 1 tablespoon
-          white sugar ¼ teaspoon salt, or more to taste 1 ¼ cups milk 3
-          tablespoons butter, melted 1 large egg
-          <br />
-        </div>
+        <div class="recipe" id="recipe"></div>
       </main>
 
       <footer>
