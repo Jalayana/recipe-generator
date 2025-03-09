@@ -1,36 +1,52 @@
 body {
   background-color: #f5d19c;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-  color: #f5a52f;
+  color: white;
 }
+
 .container {
-  background-color: #f3f3f3;
+  background-color: #e09421;
   margin: 120px auto;
   max-width: 600px;
+  border-radius: 10px;
 }
 
 header {
-  margin-bottom: 30px;
   text-align: center;
+  font-family: "Twinkle Star", cursive;
+  color: white;
 }
 
 h1 {
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 1.5;
+  font-size: 48px;
+  line-height: 1.8;
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 form {
-  padding: 30px;
+  padding: 60px;
   border-radius: 10px;
   display: flex;
 }
 
+.input-label {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
 .instructions {
   padding: 16px;
-  border: 1px solid #f5dbb4;
+  border: 1px solid #e09421;
   width: 80%;
   font-size: 16px;
   border-radius: 50px;
@@ -39,27 +55,50 @@ form {
 }
 
 .submit-button {
-  margin-left: 10px;
-  background: #f5a52f;
+  margin: 11px 0px 0px 10px;
+  background: white;
   color: black;
-  border: none;
-  width: 150px;
+  border: black solid 1.5px;
+  width: 130px;
   font-size: 16px;
-  padding: 14px 24px;
+  padding: 16px;
   border-radius: 50px;
 }
 
+.submit-button:hover {
+  cursor: pointer;
+  transition: 100ms;
+  background-color: #f5d19c;
+}
+
 .recipe {
-  font-size: 14px;
+  font-size: 16px;
   background-color: aliceblue;
   padding: 20px;
   line-height: 24px;
   border-left: 3px solid #f5a52f;
   box-shadow: 0px 20px 60px rgba(39, 33, 66, 0.03);
+  color: black;
 }
 
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+  color: black;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

@@ -6,23 +6,34 @@
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Recipe Generator</title>
   </head>
   <body>
     <div class="container">
       <header>
-        <h1>Recipes!</h1>
+        <h1>From Scratch</h1>
+        <h2>"Recipes from your pantry"</h2>
       </header>
       <main>
         <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter the ingredients"
-            autofocus
-            required
-            class="instructions"
-            id="user-instructions"
-          />
+          <label class="input-label" for="user-instructions"
+            >List the ingredients you would like to cook with:
+            <input
+              type="text"
+              placeholder="i.e. milk, bread, eggs, etc..."
+              autofocus
+              required
+              class="instructions"
+              id="user-instructions"
+            />
+          </label>
           <input type="submit" class="submit-button" />
         </form>
         <div class="recipe" id="recipe"></div>
