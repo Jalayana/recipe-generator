@@ -7,48 +7,54 @@
     <title>AI Recipe Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Recipes!</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the ingredients"
-          autofocus
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Ingredients yields 8 servings <br />
-        1 ½ cups all-purpose flour 3 ½ teaspoons baking powder 1 tablespoon
-        white sugar ¼ teaspoon salt, or more to taste 1 ¼ cups milk 3
-        tablespoons butter, melted 1 large egg
-        <br />
-        Directions <br />
-        Sift flour, baking powder, sugar, and salt together in a large bowl.
-        Make a well in the center and add milk, melted butter, and egg; mix
-        until smooth. Heat a lightly oiled griddle or pan over medium-high heat.
-        Pour or scoop the batter onto the griddle, using approximately 1/4 cup
-        for each pancake; cook until bubbles form and the edges are dry, about 2
-        to 3 minutes. Flip and cook until browned on the other side. Repeat with
-        remaining batter.
-      </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="https://github.com/Jalayana" target="_blank"> Jalayana Miller</a>
-      and is
-      <a
-        href="http://https://github.com/Jalayana/recipe-generator"
-        target="_blank"
-      >
-        open-sourced on GitHub
-      </a>
-      and is hosted on
-      <a href="https://ai-generator-recipe-project.netlify.app/">Netlify</a> .
-    </footer>
+    <div class="container">
+      <header>
+        <h1>Recipes!</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the ingredients"
+            autofocus
+            required
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="recipe">
+          Ingredients yields 8 servings <br />
+          1 ½ cups all-purpose flour 3 ½ teaspoons baking powder 1 tablespoon
+          white sugar ¼ teaspoon salt, or more to taste 1 ¼ cups milk 3
+          tablespoons butter, melted 1 large egg
+          <br />
+          Directions <br />
+          Sift flour, baking powder, sugar, and salt together in a large bowl.
+          Make a well in the center and add milk, melted butter, and egg; mix
+          until smooth. Heat a lightly oiled griddle or pan over medium-high
+          heat. Pour or scoop the batter onto the griddle, using approximately
+          1/4 cup for each pancake; cook until bubbles form and the edges are
+          dry, about 2 to 3 minutes. Flip and cook until browned on the other
+          side. Repeat with remaining batter.
+        </div>
+      </main>
+
+      <footer>
+        This project was coded by
+        <a href="https://github.com/Jalayana" target="_blank">
+          Jalayana Miller</a
+        >
+        and is
+        <a
+          href="http://https://github.com/Jalayana/recipe-generator"
+          target="_blank"
+        >
+          open-sourced on GitHub
+        </a>
+        and is hosted on
+        <a href="https://ai-generator-recipe-project.netlify.app/">Netlify</a> .
+      </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
