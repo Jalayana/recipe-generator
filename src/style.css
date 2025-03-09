@@ -13,6 +13,7 @@ a {
 
 header {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 h1 {
@@ -34,13 +35,13 @@ form {
   font-size: 16px;
   border-radius: 50px;
   line-height: 20px;
-  color: aliceblue;
+  color: black;
 }
 
 .submit-button {
   margin-left: 10px;
   background: #f5a52f;
-  color: #f5a52f;
+  color: black;
   border: none;
   width: 150px;
   font-size: 16px;
